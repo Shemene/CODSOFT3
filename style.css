@@ -103,7 +103,7 @@ nav {
 }
 
 .nav-logo {
-  width: 150px;
+  width: 100px;
 }
 
 .nav_links {
@@ -127,4 +127,27 @@ nav_links.open {
   transform: scaleY(1);
 }
 
-.link a
+.link a {
+  font-weight: 500;
+  color: var(--text-light);
+  transition: all 200ms;
+}
+
+.link a:hover {
+  color: var(--text-dark);
+}
+
+.nav_links .link {
+  color: var(--text-dark);
+  opacity: 0;
+}
+
+.nav_links.open .link a {
+  opacity: 1;
+}
+
+.nav_menu_btn {
+  font-size: 1.5rem;
+  color: var(--text-dark);
+  cursor: pointer;
+}
