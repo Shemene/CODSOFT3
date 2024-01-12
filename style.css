@@ -58,16 +58,36 @@ body {
   color: var(--primary-color);
 }
 
-.btn_link span{
-    font-size: 1.2rem;
-    transition: all 200ms;
+.btn_link span {
+  font-size: 1.2rem;
+  transition: all 200ms;
 }
- 
 
-
+.btn_link:hover span {
+  transform: translateX(10px);
+}
 
 .section_subheader {
   margin-bottom: 10px;
   font-size: 1.2rem;
   color: var(--text-light);
+}
+
+.img {
+  display: flex;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
 }
